@@ -24,6 +24,11 @@
                                 <action selector="removePlane:" destination="BV1-FR-VrT" id="sl1-vN-7sM"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="stop" id="v9V-Qz-MQQ">
+                            <connections>
+                                <segue destination="JUS-Qt-NpX" kind="show" id="73e-JY-4fR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
@@ -80,7 +85,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
                                                 <state key="normal" title="New Game"/>
                                                 <connections>
-                                                    <segue destination="BV1-FR-VrT" kind="presentation" id="SjZ-03-Khd"/>
+                                                    <segue destination="BV1-FR-VrT" kind="show" id="P3U-9s-2xG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3A-6k-sMh">
@@ -126,12 +131,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Filler text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tez-3Y-twL">
-                                <rect key="frame" x="119" y="203" width="137" height="40"/>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="top" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tez-3Y-twL">
+                                <rect key="frame" x="37" y="95" width="300" height="500"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -174,4 +180,8 @@
             <point key="canvasLocation" x="529" y="851"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="P3U-9s-2xG"/>
+        <segue reference="73e-JY-4fR"/>
+    </inferredMetricsTieBreakers>
 </document>

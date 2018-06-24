@@ -57,9 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				784385DC20DEDAB9001AF64F /* AppDelegate.swift */,
-				784385DE20DEDAB9001AF64F /* art.scnassets */,
 				784385E020DEDAB9001AF64F /* ViewController.swift */,
 				784385E220DEDAB9001AF64F /* Main.storyboard */,
+				784385DE20DEDAB9001AF64F /* art.scnassets */,
 				784385E520DEDABA001AF64F /* Assets.xcassets */,
 				784385E720DEDABA001AF64F /* LaunchScreen.storyboard */,
 				784385EA20DEDABA001AF64F /* Info.plist */,
@@ -291,7 +291,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.testing.test;
+				PRODUCT_BUNDLE_IDENTIFIER = daniel12345;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,7 +309,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.testing.test;
+				PRODUCT_BUNDLE_IDENTIFIER = daniel12345;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

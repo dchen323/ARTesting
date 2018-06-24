@@ -59,56 +59,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DB5-5r-jN7">
-                                <rect key="frame" x="150" y="276.5" width="75" height="30"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qpd-rJ-vvz">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tHB-kq-QPW">
-                                                <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOT-A7-DAh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
-                                                        <state key="normal" title="New Game"/>
-                                                        <connections>
-                                                            <segue destination="BV1-FR-VrT" kind="presentation" id="SjZ-03-Khd"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Wheres Waldo" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="49" translatesAutoresizingMaskIntoConstraints="NO" id="BeV-GM-MdW">
-                                <rect key="frame" x="52.295763896315066" y="122" width="269" height="52.000000000000014"/>
+                                <rect key="frame" x="52.5" y="122" width="270" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3A-6k-sMh">
-                                <rect key="frame" x="149" y="314" width="75" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Directions"/>
-                                <connections>
-                                    <segue destination="4WK-9i-Ra2" kind="show" id="GYI-rz-hC6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQ4-Tn-e5g">
-                                <rect key="frame" x="150" y="352" width="75" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="About Us"/>
-                                <connections>
-                                    <segue destination="dMf-ZT-Kt0" kind="show" id="S5d-4X-5Fl"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zud-xW-5zF">
+                                <rect key="frame" x="150" y="288.5" width="75" height="90"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PEe-CK-ftq">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOT-A7-DAh">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                                <state key="normal" title="New Game"/>
+                                                <connections>
+                                                    <segue destination="BV1-FR-VrT" kind="presentation" id="SjZ-03-Khd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3A-6k-sMh">
+                                                <rect key="frame" x="0.0" y="30" width="75" height="30"/>
+                                                <state key="normal" title="Directions"/>
+                                                <connections>
+                                                    <segue destination="4WK-9i-Ra2" kind="show" id="GYI-rz-hC6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQ4-Tn-e5g">
+                                                <rect key="frame" x="0.0" y="60" width="75" height="30"/>
+                                                <state key="normal" title="About Us"/>
+                                                <connections>
+                                                    <segue destination="dMf-ZT-Kt0" kind="show" id="S5d-4X-5Fl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="JuS-qQ-ngO"/>
+                                    <constraint firstAttribute="width" constant="75" id="sWH-4O-I0L"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="DB5-5r-jN7" firstAttribute="centerY" secondItem="CyG-L1-LFh" secondAttribute="centerY" constant="-42" id="gBd-Zc-xnq"/>
-                            <constraint firstItem="DB5-5r-jN7" firstAttribute="centerX" secondItem="CyG-L1-LFh" secondAttribute="centerX" id="nRS-9B-TMr"/>
+                            <constraint firstItem="Zud-xW-5zF" firstAttribute="centerX" secondItem="CyG-L1-LFh" secondAttribute="centerX" id="rFh-jc-70i"/>
+                            <constraint firstItem="Zud-xW-5zF" firstAttribute="centerY" secondItem="CyG-L1-LFh" secondAttribute="centerY" id="vLb-fQ-VQx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zou-5q-vjA"/>
                     </view>
@@ -136,6 +136,9 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Filler text" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tez-3Y-twL">
                                 <rect key="frame" x="119" y="203" width="137" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -160,6 +163,9 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Filler About Us" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aE4-Kf-RkK">
                                 <rect key="frame" x="83" y="185" width="209" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>

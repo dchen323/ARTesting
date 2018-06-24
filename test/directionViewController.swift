@@ -1,5 +1,5 @@
 //
-//  secondViewController.swift
+//  directionViewController.swift
 //  test
 //
 //  Created by Daniel Chen on 6/23/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class secondViewController: UIViewController {
+class directionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +21,7 @@ class secondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var newGame: UIButton!
-    @IBOutlet weak var directions: UIButton!
-    @IBOutlet weak var aboutUs: UIButton!
-    
+
     /*
     // MARK: - Navigation
 

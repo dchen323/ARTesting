@@ -92,11 +92,17 @@
                                 <rect key="frame" x="149" y="314" width="75" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Directions"/>
+                                <connections>
+                                    <segue destination="4WK-9i-Ra2" kind="show" id="GYI-rz-hC6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQ4-Tn-e5g">
                                 <rect key="frame" x="150" y="352" width="75" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="About Us"/>
+                                <connections>
+                                    <segue destination="dMf-ZT-Kt0" kind="show" id="S5d-4X-5Fl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -110,6 +116,8 @@
                     <navigationItem key="navigationItem" id="F8O-cA-TKv"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="aboutUs" destination="HQ4-Tn-e5g" id="bzU-Lo-nuf"/>
+                        <outlet property="directions" destination="B3A-6k-sMh" id="Ug3-Gg-wbK"/>
                         <outlet property="newGame" destination="EOT-A7-DAh" id="D8i-Gs-7Dj"/>
                     </connections>
                 </viewController>
@@ -117,13 +125,22 @@
             </objects>
             <point key="canvasLocation" x="-108" y="135.38230884557723"/>
         </scene>
-        <!--View Controller-->
+        <!--Direction View Controller-->
         <scene sceneID="Bzp-AO-M2n">
             <objects>
-                <viewController id="4WK-9i-Ra2" sceneMemberID="viewController">
+                <viewController id="4WK-9i-Ra2" customClass="directionViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ehc-hb-M86">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Filler text" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tez-3Y-twL">
+                                <rect key="frame" x="119" y="203" width="137" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FEF-Jn-0yu"/>
                     </view>
@@ -132,13 +149,22 @@
             </objects>
             <point key="canvasLocation" x="-705" y="851"/>
         </scene>
-        <!--View Controller-->
+        <!--About Us View Controller-->
         <scene sceneID="4Iy-TP-yHb">
             <objects>
-                <viewController id="dMf-ZT-Kt0" sceneMemberID="viewController">
+                <viewController id="dMf-ZT-Kt0" customClass="aboutUsViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3kX-qh-5im">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Filler About Us" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aE4-Kf-RkK">
+                                <rect key="frame" x="83" y="185" width="209" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Z8w-0T-w4f"/>
                     </view>

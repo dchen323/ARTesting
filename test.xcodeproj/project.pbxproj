@@ -13,6 +13,7 @@
 		784385E420DEDAB9001AF64F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784385E220DEDAB9001AF64F /* Main.storyboard */; };
 		784385E620DEDABA001AF64F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 784385E520DEDABA001AF64F /* Assets.xcassets */; };
 		784385E920DEDABA001AF64F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784385E720DEDABA001AF64F /* LaunchScreen.storyboard */; };
+		786C241520DF547400FB2579 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C241420DF547400FB2579 /* secondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		784385E520DEDABA001AF64F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		784385E820DEDABA001AF64F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		784385EA20DEDABA001AF64F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		786C241420DF547400FB2579 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				784385DC20DEDAB9001AF64F /* AppDelegate.swift */,
 				784385E020DEDAB9001AF64F /* ViewController.swift */,
 				784385E220DEDAB9001AF64F /* Main.storyboard */,
+				786C241420DF547400FB2579 /* secondViewController.swift */,
 				784385DE20DEDAB9001AF64F /* art.scnassets */,
 				784385E520DEDABA001AF64F /* Assets.xcassets */,
 				784385E720DEDABA001AF64F /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				784385E120DEDAB9001AF64F /* ViewController.swift in Sources */,
+				786C241520DF547400FB2579 /* secondViewController.swift in Sources */,
 				784385DD20DEDAB9001AF64F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -50,12 +50,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    
         if let touch = touches.first {
             let touchLocation = touch.location(in: sceneView)
             let results = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
             
             if let hitResult = results.first {
-                addPlane(atLocation: hitResult)
+                let alert = UIAlertController(title: "Confirm?", message: "Add Plane at this point", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Yes",style: .default, handler: { action in self.addPlane(atLocation: hitResult)}))
+                alert.addAction(UIAlertAction(title: "No", style: .default, handler: nil))
+                self.present(alert,animated: true)
+                
             }
         }
     }
@@ -75,6 +80,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             planeArray.append(sceneNode)
             
             sceneView.scene.rootNode.addChildNode(sceneNode)
+            
         }
     }
     

@@ -15,6 +15,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var planeArray = [SCNNode]()
     
     @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet weak var quit: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,13 +76,45 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 z: location.worldTransform.columns.3.z
             )
             
-            sceneNode.runAction(SCNAction.fadeOpacity(to: 0, duration: 10))
+            sceneNode.runAction(SCNAction.fadeOpacity(to: 0, duration: 5))
             
             planeArray.append(sceneNode)
             
             sceneView.scene.rootNode.addChildNode(sceneNode)
-            
+            delay(2, closure: playerTwo)
+            delay(3, closure: win )
         }
+    }
+    
+    func delay(_ delay:Double, closure:@escaping ()->()) {
+        DispatchQueue.main.asyncAfter(
+            deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
+    }
+    
+    func playerTwo(){
+        let changePlayers = UIAlertController(title: "Player2", message: "Ready to start?", preferredStyle: .alert)
+         changePlayers.addAction(UIAlertAction(title: "Go!",style: .default, handler: nil))
+        self.present(changePlayers,animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func giveUp(_ sender: Any) {
+        let giveUp = UIAlertController(title: "Give Up?", message: "Are you sure?", preferredStyle: .alert)
+        giveUp.addAction(UIAlertAction(title: "Yes",style: .default, handler: {action in self.growObject()}))
+        giveUp.addAction(UIAlertAction(title: "No",style: .default, handler: nil))
+    }
+    
+    func growObject(){
+        print("hi")
+    }
+    
+    
+    
+    func win(){
+//    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "gameOver") as! gameOverViewController
+//
+//        self.present(nextViewController, animated: true,completion: nil)
     }
     
     @IBAction func removePlane(_ sender: Any) {

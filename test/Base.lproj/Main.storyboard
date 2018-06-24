@@ -26,17 +26,18 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="stop" id="v9V-Qz-MQQ">
                             <connections>
-                                <segue destination="JUS-Qt-NpX" kind="show" id="73e-JY-4fR"/>
+                                <action selector="giveUp:" destination="BV1-FR-VrT" id="tHg-Bc-Dsg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="quit" destination="v9V-Qz-MQQ" id="Tz9-So-4yc"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="117.39130434782609"/>
+            <point key="canvasLocation" x="790" y="135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zOd-14-2no">
@@ -54,7 +55,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qad-aq-pqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1066" y="117"/>
+            <point key="canvasLocation" x="-1066" y="135"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="rp3-x0-rae">
@@ -64,16 +65,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Wheres Waldo" textAlignment="natural" minimumFontSize="49" translatesAutoresizingMaskIntoConstraints="NO" id="BeV-GM-MdW">
-                                <rect key="frame" x="52.5" y="122" width="270" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" notEnabled="YES"/>
-                                </accessibility>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zud-xW-5zF">
                                 <rect key="frame" x="150" y="288.5" width="75" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -106,8 +97,21 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Game Title" textAlignment="natural" minimumFontSize="49" translatesAutoresizingMaskIntoConstraints="NO" id="BeV-GM-MdW">
+                                <rect key="frame" x="93" y="84" width="189" height="48"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BeV-GM-MdW" firstAttribute="centerX" secondItem="CyG-L1-LFh" secondAttribute="centerX" id="71I-ot-dvw"/>
+                            <constraint firstItem="BeV-GM-MdW" firstAttribute="top" secondItem="Zou-5q-vjA" secondAttribute="top" constant="20" id="byE-B6-8DF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Zou-5q-vjA"/>
                     </view>
                     <toolbarItems/>
@@ -149,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="03p-Lj-MFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-705" y="851"/>
+            <point key="canvasLocation" x="-1066" y="830"/>
         </scene>
         <!--About Us View Controller-->
         <scene sceneID="4Iy-TP-yHb">
@@ -177,10 +181,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kRy-SA-cVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="529" y="851"/>
+            <point key="canvasLocation" x="-108" y="851"/>
+        </scene>
+        <!--gameOver-->
+        <scene sceneID="Yfv-ea-UDY">
+            <objects>
+                <viewController storyboardIdentifier="gameOver" title="gameOver" useStoryboardIdentifierAsRestorationIdentifier="YES" id="A9m-nY-j9n" customClass="gameOverViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="gameOver" id="WT8-tY-79D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zK6-MM-Cq8">
+                                <rect key="frame" x="154" y="318" width="66" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="PlayAgain"/>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="presentation" id="r62-hx-uU0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4o-Rs-0WH">
+                                <rect key="frame" x="153" y="237" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Title Page"/>
+                                <connections>
+                                    <segue destination="JUS-Qt-NpX" kind="presentation" id="BZF-GB-YJ4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="PUW-Xh-AOd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Job-bt-dGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="791" y="851"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="73e-JY-4fR"/>
+        <segue reference="458-Qp-QL4"/>
+        <segue reference="P3U-9s-2xG"/>
     </inferredMetricsTieBreakers>
 </document>

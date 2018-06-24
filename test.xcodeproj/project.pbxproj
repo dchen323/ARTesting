@@ -16,6 +16,7 @@
 		786C241520DF547400FB2579 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C241420DF547400FB2579 /* secondViewController.swift */; };
 		786C241720DF5E9900FB2579 /* directionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C241620DF5E9900FB2579 /* directionViewController.swift */; };
 		786C241920DF5EBF00FB2579 /* aboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C241820DF5EBF00FB2579 /* aboutUsViewController.swift */; };
+		78E8954D20E02F79007C48A8 /* gameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E8954C20E02F79007C48A8 /* gameOverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		786C241420DF547400FB2579 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		786C241620DF5E9900FB2579 /* directionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = directionViewController.swift; sourceTree = "<group>"; };
 		786C241820DF5EBF00FB2579 /* aboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutUsViewController.swift; sourceTree = "<group>"; };
+		78E8954C20E02F79007C48A8 /* gameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameOverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				784385DC20DEDAB9001AF64F /* AppDelegate.swift */,
 				784385E020DEDAB9001AF64F /* ViewController.swift */,
 				784385E220DEDAB9001AF64F /* Main.storyboard */,
+				78E8954C20E02F79007C48A8 /* gameOverViewController.swift */,
 				786C241820DF5EBF00FB2579 /* aboutUsViewController.swift */,
 				786C241620DF5E9900FB2579 /* directionViewController.swift */,
 				786C241420DF547400FB2579 /* secondViewController.swift */,
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E8954D20E02F79007C48A8 /* gameOverViewController.swift in Sources */,
 				786C241720DF5E9900FB2579 /* directionViewController.swift in Sources */,
 				786C241920DF5EBF00FB2579 /* aboutUsViewController.swift in Sources */,
 				784385E120DEDAB9001AF64F /* ViewController.swift in Sources */,

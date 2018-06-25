@@ -26,7 +26,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="stop" id="v9V-Qz-MQQ">
                             <connections>
-                                <action selector="giveUp:" destination="BV1-FR-VrT" id="tHg-Bc-Dsg"/>
+                                <segue destination="JUS-Qt-NpX" kind="show" id="87w-pE-uM2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -69,36 +69,31 @@
                                 <rect key="frame" x="150" y="288.5" width="75" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PEe-CK-ftq">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="90"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOT-A7-DAh">
-                                                <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
-                                                <state key="normal" title="New Game"/>
-                                                <connections>
-                                                    <segue destination="BV1-FR-VrT" kind="show" id="P3U-9s-2xG"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3A-6k-sMh">
-                                                <rect key="frame" x="0.0" y="30" width="75" height="30"/>
-                                                <state key="normal" title="Directions"/>
-                                                <connections>
-                                                    <segue destination="4WK-9i-Ra2" kind="show" id="GYI-rz-hC6"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQ4-Tn-e5g">
-                                                <rect key="frame" x="0.0" y="60" width="75" height="30"/>
-                                                <state key="normal" title="About Us"/>
-                                                <connections>
-                                                    <segue destination="dMf-ZT-Kt0" kind="show" id="S5d-4X-5Fl"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOT-A7-DAh">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                        <state key="normal" title="New Game"/>
+                                        <connections>
+                                            <segue destination="BV1-FR-VrT" kind="show" id="P3U-9s-2xG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3A-6k-sMh">
+                                        <rect key="frame" x="0.0" y="30" width="75" height="30"/>
+                                        <state key="normal" title="Directions"/>
+                                        <connections>
+                                            <segue destination="4WK-9i-Ra2" kind="show" id="GYI-rz-hC6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQ4-Tn-e5g">
+                                        <rect key="frame" x="0.0" y="60" width="75" height="30"/>
+                                        <state key="normal" title="About Us"/>
+                                        <connections>
+                                            <segue destination="dMf-ZT-Kt0" kind="show" id="S5d-4X-5Fl"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Game Title" textAlignment="natural" minimumFontSize="49" translatesAutoresizingMaskIntoConstraints="NO" id="BeV-GM-MdW">
-                                <rect key="frame" x="93" y="84" width="189" height="48"/>
+                                <rect key="frame" x="93" y="40" width="189" height="48"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
@@ -136,7 +131,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="top" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tez-3Y-twL">
-                                <rect key="frame" x="37" y="95" width="300" height="500"/>
+                                <rect key="frame" x="37" y="280" width="300" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -146,6 +141,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Directions" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yc6-rb-JNm">
+                                <rect key="frame" x="70" y="102" width="235" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FEF-Jn-0yu"/>
@@ -153,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="03p-Lj-MFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1066" y="830"/>
+            <point key="canvasLocation" x="-796" y="887"/>
         </scene>
         <!--About Us View Controller-->
         <scene sceneID="4Iy-TP-yHb">
@@ -163,8 +165,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Filler About Us" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aE4-Kf-RkK">
-                                <rect key="frame" x="83" y="185" width="209" height="40"/>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Lorem ipsum dolor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aE4-Kf-RkK">
+                                <rect key="frame" x="83" y="274" width="209" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -174,6 +176,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="About Us" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R7Y-AB-PDC">
+                                <rect key="frame" x="83" y="87" width="220" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Z8w-0T-w4f"/>
@@ -181,44 +190,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kRy-SA-cVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-108" y="851"/>
-        </scene>
-        <!--gameOver-->
-        <scene sceneID="Yfv-ea-UDY">
-            <objects>
-                <viewController storyboardIdentifier="gameOver" title="gameOver" useStoryboardIdentifierAsRestorationIdentifier="YES" id="A9m-nY-j9n" customClass="gameOverViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="gameOver" id="WT8-tY-79D">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zK6-MM-Cq8">
-                                <rect key="frame" x="154" y="318" width="66" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PlayAgain"/>
-                                <connections>
-                                    <segue destination="BV1-FR-VrT" kind="presentation" id="r62-hx-uU0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4o-Rs-0WH">
-                                <rect key="frame" x="153" y="237" width="68" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Title Page"/>
-                                <connections>
-                                    <segue destination="JUS-Qt-NpX" kind="presentation" id="BZF-GB-YJ4"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="PUW-Xh-AOd"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Job-bt-dGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="791" y="851"/>
+            <point key="canvasLocation" x="324" y="887"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="458-Qp-QL4"/>
         <segue reference="P3U-9s-2xG"/>
+        <segue reference="87w-pE-uM2"/>
     </inferredMetricsTieBreakers>
 </document>
